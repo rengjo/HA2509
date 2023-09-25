@@ -1,0 +1,42 @@
+/* Gemeinsame Stildefinitionen für das Menü */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Hintergrundfarbe des Menüs */
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left; /* Elemente horizontal ausrichten */
+  }
+  
+  nav li a {
+    display: block;
+    color: white; /* Textfarbe der Menüelemente */
+    text-align: center;
+    padding: 14px 16px; /* Innenabstand oben/unten und seitlich */
+    text-decoration: none; /* Unterstreichungen entfernen */
+  }
+  
+  /* Stildefinitionen für den Hover-Zustand (Mausüber) */
+  nav li a:hover {
+    background-color: #ddd; /* Hintergrundfarbe beim Überfahren */
+    color: #333; /* Textfarbe beim Überfahren */
+  }
+  
+  /* Stildefinition für aktive Menüelement*/
+  nav li.active a {
+    background-color: #555; /* Hintergrundfarbe des aktiven Elements */
+  }
+  
+  /* Stildefinitionen für Untermenüs */
+  nav ul ul {
+    display: none; /* Standardmäßig ausgeblendet */
+    position: absolute; /* Absolut positioniert */
+    background-color: #444; /* Hintergrundfarbe der Untermenüs */
+  }
+  
+  nav li:hover > ul {
+    display: block; /* Einblenden, wenn das übergeordnete Element überfahren wird */
+  }  

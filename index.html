@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25.09.Herausforderung</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Hier Navigationsmenü -->
+  <div id="menu-container"></div>
+
+  <!-- Rest der Seite -->
+  <h1>Willkommen bei der Herausforderung am 25.09</h1>
+  
+
+  <!-- Lade jQuery von einem CDN (Content Delivery Network) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Verwende jQuery, um Menü einzufügen
+    $(document).ready(function () {
+      $("#menu-container").load("menu.html");
+    });
+  </script>
+</body>
+</html>
